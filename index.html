@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f6dbe539be.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Simple Login Form</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <form action="">
+      <h1>Simple Design Inc</h1>
+      <div class="box">
+        <div class="iconBox"><i class="fa-solid fa-user"></i></div>
+        <input
+          id="username"
+          type="text"
+          placeholder="Username"
+          name="username"
+        />
+      </div>
+      <div class="box">
+        <div class="iconBox"><i class="fa-solid fa-lock"></i></div>
+        <input
+          id="password"
+          type="password"
+          placeholder="Password"
+          name="password"
+        />
+        <div class="eyeBox" id="show-btn"><i class="fa-solid fa-eye"></i></div>
+      </div>
+      <div class="beetween">
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="check" />
+          <label id="remember" for="check">Remember me</label>
+        </div>
+
+        <input id="forgotPassword" type="button" value="forgot password?" />
+      </div>
+
+      <button id="loginBtn" type="submit">LOGIN</button>
+
+      <div id="alertModal">
+        <p>Username and Password cannot be empty !</p>
+      </div>
+    </form>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

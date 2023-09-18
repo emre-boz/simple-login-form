@@ -1,0 +1,208 @@
+/* It was placed to prevent the blue screen that appears when touching in mobile use. */
+:root {
+  -webkit-tap-highlight-color: transparent; /* transparent with keyword */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* transparent with rgba */
+  -webkit-tap-highlight-color: hsla(0, 0, 0, 0); /* transparent with hsla */
+  -webkit-tap-highlight-color: #00000000; /* transparent with hex with alpha */
+  -webkit-tap-highlight-color: #0000; /* transparent with short hex with alpha */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background: #3cbbb1;
+  padding: 20px;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.box {
+  width: 80%;
+  margin: 10px;
+  height: 40px;
+  display: flex;
+  position: relative;
+  align-content: center;
+}
+
+.iconBox {
+  width: 15%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2efea;
+  border-radius: 10px 0 0 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 85%;
+  height: 100%;
+  border: none;
+  padding-left: 10px;
+  font-size: large;
+  border-radius: 0 10px 10px 0;
+}
+
+input[type="text"],
+input[type="password"]:focus {
+  outline: none;
+}
+
+input[type="button"] {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.beetween {
+  width: 76%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+
+#loginBtn {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: #f2efea;
+}
+
+#loginBtn:hover {
+  background: #df2935;
+  color: #f2efea;
+}
+
+#forgotPassword:hover {
+  color: #f2efea;
+}
+
+h1 {
+  color: #f2efea;
+}
+
+.eyeBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  width: 20%;
+  height: 40px;
+
+  font-size: 21px;
+}
+
+.fa-eye {
+  cursor: pointer;
+}
+
+.color-grey {
+  color: grey;
+}
+
+[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #f2efea;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid #df2935;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: url(assets/check-solid.svg);
+}
+#alertModal {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#alertModal p {
+  background: #df2935;
+  text-align: center;
+  padding: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+@media (max-width: 425px) {
+  form {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 3px;
+    border-radius: 0;
+  }
+}
