@@ -189,14 +189,6 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-.close {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 @media (max-width: 425px) {
   form {
     height: 100%;
